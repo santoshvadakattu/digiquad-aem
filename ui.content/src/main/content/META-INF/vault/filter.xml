@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/digiquad" mode="merge"/>
+    <filter root="/content/digiquad" mode="merge"/>
+    <filter root="/content/dam/digiquad/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/digiquad" mode="merge"/>
+</workspaceFilter>
