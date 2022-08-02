@@ -1,0 +1,19 @@
+
+div.alignLeft {
+	text-align: left;
+}
+div.alignRight {
+	text-align: right;
+}
+div.alignCenter {
+	text-align: center;
+}
+div.redColor {
+	color:red
+}
+div.greenColor {
+	color:green
+}
+div.yellowColor {
+	color:yellow
+}
