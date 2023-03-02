@@ -13,6 +13,7 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,7 +36,8 @@ public class AuthorBooksImpl implements AuthorBooks {
     @ValueMapValue
     private List<String> books;
 
-
+  
+   
     @Override
     public String getAuthorName() {
         return authorname;
@@ -70,7 +72,9 @@ public class AuthorBooksImpl implements AuthorBooks {
         LOG.info("\n SIZE {} ",bookDetailsMap.size());
         return bookDetailsMap;
     }
-
+   
+    
+    // other type of get child resource using getBookDetailsWithBean()
     @Override
     public List<MultifieldHelper> getBookDetailsWithBean(){
         List<MultifieldHelper> bookDetailsBean=new ArrayList<>();
@@ -115,6 +119,8 @@ public class AuthorBooksImpl implements AuthorBooks {
         }
         LOG.info("\n SIZE Multifield {} ",bookDetailsNasted.size());
         return bookDetailsNasted;
+        
     }
+
 
 }

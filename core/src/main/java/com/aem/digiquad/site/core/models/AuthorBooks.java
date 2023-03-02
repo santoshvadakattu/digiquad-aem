@@ -3,8 +3,10 @@ package com.aem.digiquad.site.core.models;
 import java.util.List;
 import java.util.Map;
 
-public interface AuthorBooks {
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
+public interface AuthorBooks {	
+	
     String getAuthorName();
 
     List<String> getAuthorBooks();
@@ -14,4 +16,4 @@ public interface AuthorBooks {
     List<MultifieldHelper> getBookDetailsWithBean();
 
     List<MultifieldHelper> getBookDetailsWithNastedMultifield();
-}
+}  

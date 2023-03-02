@@ -32,12 +32,12 @@ import org.slf4j.LoggerFactory;
 @Component(service=Runnable.class)
 public class SimpleScheduledTask implements Runnable {
 
-    @ObjectClassDefinition(name="A scheduled task",
+    @ObjectClassDefinition(name="Digiquad scheduled task",
                            description = "Simple demo for cron-job like task with properties")
     public static @interface Config {
 
         @AttributeDefinition(name = "Cron-job expression")
-        String scheduler_expression() default "*/30 * * * * ?";
+        String scheduler_expression() default "*/40 * * * * ?";
 
         @AttributeDefinition(name = "Concurrent task",
                              description = "Whether or not to schedule this task concurrently")

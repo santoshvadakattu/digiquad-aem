@@ -5,5 +5,5 @@
     jcr:primaryType="cq:Component"
     jcr:title="Commerce Teaser"
     sling:resourceSuperType="core/cif/components/content/teaser/v2/teaser"
-    imageDelegate="digiquad/components/image"
-    componentGroup="Digiquad Project - Commerce"/>
+    componentGroup="Digiquad Project - Commerce"
+    imageDelegate="digiquad/components/image"/>
